@@ -1,0 +1,1 @@
+UPDATE timeline SET is_linger_impressed=1 WHERE _id IN(350,361,351,341,342,343,300,301,345,302,303,304,337,305,306)

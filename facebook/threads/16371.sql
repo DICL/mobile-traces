@@ -1,0 +1,6 @@
+BEGIN EXCLUSIVE;
+COMMIT;
+select count(feed_type) from home_stories where feed_type = 'top_stories'
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/cp0/e15/q65/p180x540/271026295_5354148208022538_2230456623644530561_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=isn0o7C1NkoAX_Zz9Bl&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT-MPe4gLGCAxfi1n7TQ6x_FbouHY3Os8FucR6mP9rJpgg&oe=61DC0B29')
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-1/cp0/e15/q65/p111x111/219438996_364953391811860_133003646715006348_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=c6021c&_nc_ohc=pM0ntzLhWfwAX-I8teS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT8EH5Sm2sfKYvQrbkL6SjWA9b_ysFcXTV7yEnKiyxBENA&oe=61DC78EA')
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/271286631_10158870090972677_779645746211319066_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=a-vk2n-_40MAX866wv_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT-_pBSztFzH6QErhIfYj9Dn93xT9-pLkJqHulp-XV7f4A&oe=61DBCC59')

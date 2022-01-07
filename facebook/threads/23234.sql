@@ -1,0 +1,18 @@
+BEGIN EXCLUSIVE;
+INSERT OR REPLACE  INTO home_stories_media(media_cache_state,media_id,dedup_key,media_type) VALUES (0,'https://scontent-ssn1-1.xx.fbcdn.net/v/t1.18169-1/cp0/e15/q65/p111x111/29597655_1633897679990584_1403168803542093271_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=1eb0c7&_nc_ohc=LvxeW3HEu1QAX_XCuyJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT_g14vqhcoKg6T9DpRsU3nDtXqqIO5AYZbCxUvCWYufIA&oe=61FC5652','2646495079996873760','PHOTO')
+COMMIT;
+BEGIN EXCLUSIVE;
+INSERT OR REPLACE  INTO home_stories_media(media_cache_state,media_id,dedup_key,media_type) VALUES (0,'https://scontent-ssn1-1.xx.fbcdn.net/v/t45.1600-4/fr/cp0/e15/q65/spS444/245103414_23848796484210346_4593838649202165960_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=67cdda&_nc_ohc=FGSkkfahW2oAX-VLeO3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT8sBh3KkLTQhGjgswKjL1Lw6Ibh11hdO6Qpx4W_R4aGnQ&oe=61DBA4DA','2646495079996873760','PHOTO')
+COMMIT;
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/270363709_4519478954841995_6151724194155230319_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=825194&_nc_ohc=CBCx1GgrYvQAX8KR9Of&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT9NJOLQdbmYiMIoNGuir0qLlfyow20REnIHSHd0cCKqlw&oe=61DB3112')
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/270363709_4519478954841995_6151724194155230319_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=825194&_nc_ohc=CBCx1GgrYvQAX8KR9Of&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT9NJOLQdbmYiMIoNGuir0qLlfyow20REnIHSHd0cCKqlw&oe=61DB3112')
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/271305056_1322450701551994_729259236636682166_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=825194&_nc_ohc=MvCtLKz6iVcAX-8MVqg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT87kIiRj5SzOZXMlh37LixYzjivSzXtdTS_rvVM1Z36Jw&oe=61DB7702')
+BEGIN EXCLUSIVE;
+INSERT OR REPLACE  INTO home_stories_media(media_cache_state,media_id,dedup_key,media_type) VALUES (0,'89a1dc505680f8693cbc0d70d351ee04','-7823351790187924071','ATTACHMENT_LINK')
+COMMIT;
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t45.1600-4/cp0/e15/q65/spS444/c0.15.728.380a/271435522_6284445950451_3151786848469220210_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=67cdda&_nc_ohc=IRRUiKM18N8AX9yngrN&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT8272gkdUnsSEq68uwoaXz4hVd8kmeiv9eENLSpbWpOzQ&oe=61DC28EA')
+BEGIN EXCLUSIVE;
+INSERT OR REPLACE  INTO home_stories_media(media_cache_state,media_id,dedup_key,media_type) VALUES (0,'0b514d591bdd0198a20f99af2a492407','8787096547933564967','ATTACHMENT_LINK')
+COMMIT;
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://external-ssn1-1.xx.fbcdn.net/safe_image.php?d=AQEKYei8HX_TZf7B&w=620&h=324&url=fbstaging%3A%2F%2Fgraph.facebook.com%2Fstaging_resources%2FMDE2NDc2ODEyNzk5MTY1ODk6NjA3MTc4MTA0&cfs=1&ext=emg1&pv=15&_nc_oe=6f587&_nc_sid=06c271&ccb=3-5&_nc_hash=AQHB2GYn_DES_Vvl')
+UPDATE home_stories_media SET media_cache_state=1 WHERE (media_type='PHOTO' AND media_id='https://scontent-ssn1-1.xx.fbcdn.net/v/t1.18169-1/cp0/e15/q65/p111x111/11781664_871187272965287_5345047715012277898_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=7206a8&_nc_ohc=dxMeQKEkVhEAX8aEkD0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ssn1-1.xx&oh=00_AT8FND8gBJsZJgy8zCrykcRKJnqOKlEyz25s8I7dpesjxw&oe=61FB55AA')

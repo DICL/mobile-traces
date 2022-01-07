@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+CREATE TABLE android_metadata (locale TEXT);
+INSERT INTO android_metadata VALUES('en_US');
+CREATE TABLE sync_item_data (corpus INTEGER NOT NULL, client_id TEXT NOT NULL, server_id TEXT, timestamp BIGINT DEFAULT 0, feature_fprint BIGINT, latitude_e6 INTEGER, longitude_e6 INTEGER, numerical_index BIGINT, string_index TEXT, sync_state INTEGER DEFAULT 0, item_proto BLOB, PRIMARY KEY (corpus, client_id));
+CREATE TABLE sync_corpus_metadata (corpus INTEGER, sync_token STRING, unique_id_provider BIGINT DEFAULT 0, pagination_token STRING, last_sync_time_for_corpus BIGINT, PRIMARY KEY (corpus));
+CREATE TABLE sync_metadata (metadata_key STRING, numerical_value BIGINT);
+CREATE INDEX idx_sync_item_server_id ON sync_item_data (corpus, server_id);
+CREATE INDEX idx_sync_item_timestamp ON sync_item_data (corpus, timestamp);
+CREATE INDEX idx_sync_item_feature_fprint ON sync_item_data (corpus, feature_fprint);
+CREATE INDEX idx_sync_item_lat_long ON sync_item_data (corpus, latitude_e6, longitude_e6);
