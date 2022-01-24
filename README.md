@@ -6,16 +6,24 @@
 
 The number of conflict txns below are retrieved by static analysis (on table name)
 
-|                 | Facebook | Twitter | GG Play service | Calendar | Map  |
-|-----------------|----------|---------|-----------------|----------|------|
-| Total # threads | 118      | 30      | 131             | 30       | 9    |
-| Total # queries | 5041     | 16032   | 335755          | 19564    | 3827 |
-| Total # txns    | 2712     | 4039    | 5831            | 15420    | 2699 |
-| # read txns     | 781      | 1432    | 3109            | 15360    | 2460 |
-| # write txns    | 1931     | 2607    | 2722            | 60       | 239  |
-| # conflict txns | 0        | 16      | 1946            | 0        | 4    |
-|   - # read      | 0        | 7       | 883             | 0        | 2    |
-|   - # write     | 0        | 9       | 1063            | 0        | 2    |
+|                 | Facebook | Twitter | Calendar | Map  | Gmail  |
+|-----------------|----------|---------|----------|------|--------|
+| # threads       | 180      | 30      | 30       | 22   | 38     |
+| # GG threads    | 22       | 28      | 20       | 17   | 145    |
+| # queries       | 11836    | 27918   | 19564    | 5521 | 20111  |
+| # GG queries    | 3284     | 4522    | 1456     | 3163 | 336789 |
+
+### Number of queries which belong to a conflict transaction
+
+**Note**: Conflict is considered on DB level
+
+|                     | Facebook    | Twitter                   | Calendar    | Map          | Gmail        |
+|---------------------|-------------|---------------------------|-------------|--------------|--------------|
+| Most conflict db    | newsfeed_db | 1479345335860621312-61.db | calendar.db | phenotype.db | phenotype.db |
+| % conflict read     | 122         | 175                       | 20          | 10           | 8            |
+| % conflict write    | 913         | 1340                      | 133         | 48           | 174          |
+| % conflict GG read  | 78          | 72                        | 32          | 580          | 35973        |
+| % conflict GG write | 83          | 60                        | 25          | 2113         | 131573       |
 
 ### Concurrent threads
 
